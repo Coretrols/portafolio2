@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="animacion" href="animacion.js">
+</head>
+<body>
+    <header></header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <h1 class="presentacion__contenido__titulo">
+                Eleve su negocio digital a otro nivel 
+                <strong class="titulo-destaque">con un Full-Stack de calidad!
+                </strong></h1>
+                <p class="presentacion__contenido__texto">¡Hola! Soy Samir Steven, desarrollador Full Stack con
+                    especialización en JavaScript, HTML, CSS, .NET, SQL. me desempeño como Freelancer
+                    ayudando ha hacer realidad esas buenas ideas.                                
+
+                </p>      
+                <h2 class="fire-text">Certificaciones</h2>
+                <section>
+                    <ol type="I" class="presentacion__contenido__certificados">
+                        
+                        <li>
+                            <strong>Programación con JS básica</strong>
+                            <a href="https://app.aluracursos.com/user/samirmurillo288202/course/logica-programacion-sumergete-programacion-javascript/certificate">Certificado</a>
+                            <details>
+                                <summary>Mostrar Logros</summary>                            
+                                <p class="logro">Logros: Iniciando con JavaScript,
+                                    Condicionales y concatenación,
+                                    Loops y tentativas,
+                                    Buenas prácticas en programación,
+                                    Desafío.</p>
+                            </details>
+                        </li>
+                        <li>
+                            <strong>Explorando funciones y listas con JS</strong>
+                            <a href="https://app.aluracursos.com/user/samirmurillo288202/course/logica-programacion-explorar-funciones-listas/certificate">Certificado</a>
+                            <details>
+                                <summary>Mostrar Logros</summary>    
+                                <p class="logro">Logros: Interactuando con HTML,
+                                Funciones,
+                                Reniciando el juego,
+                                Listas,
+                                Publicando el proyecto.</p>
+                            </details>
+                        </li>
+                        <li>
+                            <strong>HTML y CSS: ambientes de desarrollo, estructura de archivos y tags</strong>
+                            <a href="https://app.aluracursos.com/user/samirmurillo288202/course/html-css-desarrollo-estructura-archivos-tags/certificate">Certificado</a>
+                            <details>
+                                <summary>Mostrar Logros</summary>    
+                                <p class="logro">Logros: Uso del editor de código VSCode,
+                                    Documentación y HTML,
+                                    Layout y tags semánticas,
+                                    Estilizando el proyecto con CSS,
+                                    Mejorando la estilización de tú CSS.</p>
+                            </details>
+                        </li>
+                        <li>
+                            <strong>HTML y CSS: Clases, Posicionamiento y Flexbox</strong>
+                            <a href="https://app.aluracursos.com/user/samirmurillo288202/course/html-css-clases-posicionamiento-flexbox/certificate">Certificado</a>
+                            <details>
+                                <summary>Mostrar Logros</summary>    
+                                <p class="logro">Logros: Interactuando con HTML,
+                                Funciones,
+                                Reniciando el juego,
+                                Listas,
+                                <a href="https://coretrols.github.io/juegoSecreto/">Publicando el proyecto.</a></p>
+                            </details>
+                        </li>
+                        <li>
+                            <strong>HTML y CSS: header, footer y variables CSS</strong>
+                            <a href="https://app.aluracursos.com/user/samirmurillo288202/course/html-css-header-footer-variables-css/certificate">Certificado</a>
+                            <details>
+                                <summary>Mostrar Logros</summary>    
+                                <p class="logro">Logros: Preparando el layout del proyecto,
+                                    Creando iconos clicables,
+                                    Creando el header y el footer,
+                                    Navegando entre páginas,
+                                    Aplicando las variables CSS.</p>
+                            </details>
+                        </li>   
+                        <li>
+                            <strong>HTML y CSS: trabajando con responsividad y publicación de proyectos</strong>
+                            <a href="https://app.aluracursos.com/user/samirmurillo288202/course/html-css-trabajando-responsividad-publicacion-proyectos/certificate">Certificado</a>
+                            <details>
+                                <summary>Mostrar Logros</summary>    
+                                <p class="logro">Logros: Unidades de medida,
+                                    Adaptando los elementos,
+                                    Responsividad,
+                                    Responsividad y Github,
+                                    El repositorio de Github.</p>
+                            </details>
+                        </li>                               
+                    </ol>
+                
+            </section>
+                <div class="presentacion__enlaces">
+                    <h2 class="presentacion__enlaces__subtitulo">Accede a mis Redes: </h2>
+
+                    <a class="presentacion__enlaces__link" href="https://www.instagram.com/samirstevenmurillo/">
+                        <img src="./assets/instagram.png" alt="Icono de Instagram">Instagram </a>
+                    <a class="presentacion__enlaces__link" href="https://github.com/">                    
+                        <img src="./assets/github.png" alt="Icono de github">GitHub</a>
+                    <a class="presentacion__enlaces__link" href="https://www.linkedin.com/in/samir-steven-murillo-betancur-9882541bb">                    
+                        <img src="./assets/linkedin.png" alt="Icono de LinkedIn">LinkedIn</a>
+                </div>
+                <!-- Introducción musical :) -->
+                <div class="presentacion__contenido__musica">
+                    <audio id="music" src="./assets/cafu banton - vamos pa' la playa.mp3" preload="auto"></audio>  
+                    <button class="presentacion__contenido__musica___reproducir" onclick="document.getElementById('music').pause()">Pausar</button>
+                    <button class="presentacion__contenido__musica___reproducir" onclick="document.getElementById('music').play()">reproducir</button>   
+                    <script>
+                        window.onload = function() {
+                            var music = document.getElementById('music');
+                            music.play().catch(function(error) {
+                                console.log("No se pudo reproducir la música automáticamente: " + error);
+                            });
+                        };
+                    </script>             
+                </div>
+
+            </section>
+        <img class="presentacion__contenido__imagen" src="./assets/yo2.jpg" alt="Foto de Samir Steven sonriendo">
+        
+               
+        <!-- <audio id="music" src="./assets/cafu banton - vamos pa' la playa.mp3" preload="auto"></audio>
+    <button onclick="document.getElementById('music').play()">Reproducir Música</button> -->
+    </main>
+    <footer>desarrolando por Steven Murillo</footer>
+</body>
+</html>
